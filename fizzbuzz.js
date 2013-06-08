@@ -1,4 +1,5 @@
-/* To Run:
+/* Language: JavaScript (https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+ * To Run:
  * $ node fizzbuzz.js */
 
 for (i = 0; i < 101; i++) {

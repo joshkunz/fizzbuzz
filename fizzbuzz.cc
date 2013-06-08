@@ -1,4 +1,5 @@
-/* To run:
+/* Language: C++ (http://www.cplusplus.com/)
+ * To run:
  * $ g++ fizzbuzz.cc && ./a.out */
 
 #include <iostream>

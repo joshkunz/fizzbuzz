@@ -1,4 +1,5 @@
-/* To Run:
+/* Language: Java (http://java.com)
+ * To Run:
  * $ javac fizzbuzz.java && java fizzbuzz */
 
 public class fizzbuzz {

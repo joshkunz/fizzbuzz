@@ -1,3 +1,4 @@
+# Language: CoffeeScript (http://coffeescript.org/)
 # To run:
 # $ coffee fizzbuzz.coffee
 

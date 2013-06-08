@@ -1,4 +1,5 @@
-/* To Run:
+/* Language: C ( https://en.wikipedia.org/wiki/C_(programming_language) )
+ * To Run:
  * $ gcc fizzbuzz.c && ./a.out */
 
 #include <stdio.h>

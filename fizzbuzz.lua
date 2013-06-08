@@ -1,3 +1,4 @@
+-- Language: Lua (http://www.lua.org)
 -- To run:
 -- $ lua fizbuzz.lua
 --
