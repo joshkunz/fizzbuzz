@@ -1,3 +1,6 @@
+# To run:
+# $ bash fizzbuzz.sh
+
 for (( i=0 ; i <= 100 ; i++ )) do
     v="$i "
     if [ $(( i % 3 )) -eq 0 ]; then 
