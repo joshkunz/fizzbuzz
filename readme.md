@@ -32,8 +32,8 @@ Each file should have a note, explaining what language it's written in,
 how to run it on a \*nix system, and possibly a link to an online repl.
 
 Languages on the 'to learn' list:
-    * A lisp dialect (probably clisp)
-    * Haskell and Erlang
-    * Perl
-    * Prolog
-    * x86
+* A lisp dialect (probably clisp)
+* Haskell and Erlang
+* Perl
+* Prolog
+* x86
