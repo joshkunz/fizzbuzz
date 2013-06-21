@@ -24,3 +24,6 @@ define(`fizzbuzz', `loop(`i', $1, $2, `i fizz(i)`'buzz(i)`'_NL')')
 Divert the output back to standard out
 divert`'dnl
 fizzbuzz(1, 100)dnl
+
+And here's the single line version:
+define(`_nl', esyscmd(`echo'))define(`div', `ifelse(eval($1 % $2), 0, $3)')define(`f', `div($1, 3, `Fizz')')define(`b', `div($1, 5, `Buzz')')define(`fb', `ifdef(`i', `', `pushdef(`i', $1)')ifelse(i, $2, `', `i f(i)`'b(i) _nl`'pushdef(`i', incr(i))fb($@)')')fb(1, 101)dnl
