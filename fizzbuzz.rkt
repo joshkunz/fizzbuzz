@@ -1,4 +1,5 @@
 #lang racket
+; To Run: $ racket fizzbuzz.rkt
 
 (define (fizzbuzz from to)
  (let* ([div (lambda (x y) 
