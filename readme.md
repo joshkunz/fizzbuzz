@@ -53,8 +53,11 @@ Langauges Implemented:
 * BASH Shell
 * M4
 
+total: 17
+total (no similar variants): 14
+
 Languages on the 'to learn' list:
-* Haskell and Erlang
+* Erlang
 * Perl
 * Prolog
-* x86
+* x86 Assembly
