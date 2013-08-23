@@ -31,6 +31,28 @@ as I learn new languages.
 Each file should have a note, explaining what language it's written in,
 how to run it on a \*nix system, and possibly a link to an online repl.
 
+Langauges Implemented:
+* AWK
+* C Variants 
+  * C
+  * C++
+  * Objective-C
+* JavaScript Variants
+  * JavaScript
+  * CoffeeScript
+* FORTH
+* Haskell
+* Java
+* Lisp Variants
+  * R5RS Scheme
+  * newLISP (scheme variant)
+  * Racket (scheme variant)
+* Lua
+* Python
+* Ruby
+* BASH Shell
+* M4
+
 Languages on the 'to learn' list:
 * Haskell and Erlang
 * Perl
