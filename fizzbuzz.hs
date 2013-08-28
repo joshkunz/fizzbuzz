@@ -1,6 +1,8 @@
 -- Language: Haskell
 -- To Run: $ ghc fizzbuzz.hs && ./fizzbuzz
 
+module Main (main) where
+
 -- Return the given string if y is evenly divisible by x
 pdivt :: (Integral a) => String -> a -> a -> String
 pdivt t x y = if (mod y x == 0) then t else ""
