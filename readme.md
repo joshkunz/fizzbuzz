@@ -33,6 +33,7 @@ how to run it on a \*nix system, and possibly a link to an online repl.
 
 Langauges Implemented:
 * AWK
+* bc (Bench Calculator)
 * C Variants 
   * C
   * C++
