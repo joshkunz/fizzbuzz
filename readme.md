@@ -53,6 +53,8 @@ Langauges Implemented:
 * Ruby
 * BASH Shell
 * M4
+* GDB's scripting language
+* VimScript
 
 Languages on the 'to learn' list:
 * Erlang
