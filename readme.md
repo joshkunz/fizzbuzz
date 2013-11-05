@@ -55,9 +55,9 @@ Langauges Implemented:
 * M4
 * GDB's scripting language
 * VimScript
+* Prolog
 
 Languages on the 'to learn' list:
 * Erlang
 * Perl
-* Prolog
 * x86 Assembly
