@@ -29,35 +29,36 @@ add most likely keep adding to this repository
 as I learn new languages.
 
 Each file should have a note, explaining what language it's written in,
-how to run it on a \*nix system, and possibly a link to an online repl.
+how to run it on a \*nix system, and possibly a link to an online REPL.
 
-Langauges Implemented:
+Languages Implemented:
 * AWK
+* BASH Shell
 * bc (Bench Calculator)
 * C Variants 
   * C
   * C++
   * Objective-C
+* FORTH
+* GDB's scripting language
+* Go
+* Haskell
+* Java
 * JavaScript Variants
   * JavaScript
   * CoffeeScript
-* FORTH
-* Haskell
-* Java
 * Lisp Variants
   * R5RS Scheme
   * newLISP (scheme variant)
   * Racket (scheme variant)
 * Lua
+* M4
+* Prolog
 * Python
 * Ruby
-* BASH Shell
-* M4
-* GDB's scripting language
 * VimScript
-* Prolog
 
 Languages on the 'to learn' list:
-* Erlang
-* Perl
 * x86 Assembly
+* Erlang
+* tcl
