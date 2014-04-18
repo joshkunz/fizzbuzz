@@ -1,18 +1,18 @@
 (* Language: OCaml
- * To Run: $ ocaml fizzbuzz.ml *)
+ * To Run:
+ *     $ ocaml fizzbuzz.ml *)
 
-let divides a b = 
-    (a mod b) == 0;;
+module FizzBuzz : sig
+    val over : int -> int -> unit
+end = struct
+    (* val divs : int -> int -> string -> string *)
+    let divs a b s = if a mod b == 0 then s else "";;
 
-let div_string a b str = 
-    if (divides a b) then str else "";;
+    let rec over from _to =
+        Printf.printf "%d %s%s\n" from
+            (divs from 3 "Fizz")
+            (divs from 5 "Buzz");
+        if from < _to then over (from + 1) _to;;
+end;;
 
-let rec fizzbuzz from to_ = 
-    if (from <= to_) then
-        (print_string @@ (string_of_int from) ^ " " ^
-                         (div_string from 3 "Fizz") ^
-                         (div_string from 5 "Buzz") ^ "\n";
-        fizzbuzz (succ from) to_)
-;;
-
-fizzbuzz 1 100;;
+FizzBuzz.over 1 100
