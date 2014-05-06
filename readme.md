@@ -57,6 +57,7 @@ Languages Implemented:
 * Prolog
 * Python
 * Ruby
+* Plain TeX
 * VimScript
 
 Languages on the 'to learn' list:

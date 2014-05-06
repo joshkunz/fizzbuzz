@@ -1,0 +1,73 @@
+% Language: Plain TeX
+% To Run:
+\noindent
+Like Vim, \TeX\ isn't really a conventional programming language. It's
+a language for typesetting documents, that has some programming features
+built in. The \TeX\ program generates ``dvi'' files that can be rendered into
+a number of formats, the most common being pdf. To generate a pdf with
+FizzBuzz from 1 to 100 run:
+
+    {\tt \$ tex fizzbuzz.tex \par     % $ tex fizzbuzz.tex
+         \$ dvipdf fizzbuzz.dvi }     % $ dvipdf fizzbuzz.tex
+
+\noindent
+Which should generate a {\tt fizzbuzz.pdf} file for you to view. If you're viewing
+the pdf of this document, below is the output of fizzbuzz from 1 to 100:
+% \fizzbuzz{1}{100}
+
+% Everything Below this point is the implementation.
+
+\newcount\fstart
+\newcount\fend
+\newcount\divis
+\newcount\modq
+\newif\ifdthree
+\newif\ifdfive
+
+% \mod{a}{n} will set the counter 'a' to the remainder
+% of a / n
+\def\mod #1#2{
+    \modq=#1
+    \divide\modq by #2
+    \multiply\modq by #2
+    \multiply\modq by -1
+    \advance#1 by \modq
+}
+
+% \fb{\ctr} will output the fizzbuzz string for the 
+% number in the counter
+\def\fb #1{
+    \number#1 
+    \dthreefalse
+    \dfivefalse
+    \divis=#1
+    \mod{\divis}{3}
+    \ifnum \divis=0 \dthreetrue\fi
+    \divis=#1
+    \mod{\divis}{5}
+    \ifnum \divis=0 \dfivetrue\fi
+    \ifdthree{}Fizz\fi
+    \ifdfive{}Buzz\fi
+    \par
+}
+
+% \fizzbuzz{from}{to} Will do the fizzbuzz operation 
+% from 'from' to 'to'
+\def\fizzbuzz #1#2{
+    \fstart=#1
+    \fend=#2
+    \divis=0
+    \ifnum \fstart = \fend
+        \empty%
+    \else%
+    \loop{}%
+    \fb{\fstart}
+    \ifnum \fstart < \fend
+        \advance \fstart by 1
+    \repeat
+    \fi
+}
+
+% This is the actual command that generates the output
+\fizzbuzz{1}{100}
+\end
