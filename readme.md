@@ -56,6 +56,7 @@ Languages Implemented:
 * OCaml
 * Prolog
 * Python
+* R
 * Ruby
 * Plain TeX
 * VimScript
