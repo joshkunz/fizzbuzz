@@ -4,19 +4,28 @@
 
 #include <Foundation/Foundation.h>
 
-int main() {
-    int i = 0;
+void fizzbuzz(int from, int to) {
     NSMutableString *str; 
-    for (; i < 100; i++) {
-        str = [[NSMutableString alloc] initWithFormat:@"%d ", i];
-        if (i % 3 == 0) {
+    for (; from < to; from++) {
+        bool printed = false;
+        str = [[NSMutableString alloc] init];
+        if (from % 3 == 0) {
             [str appendString:@"Fizz"];
+            printed = true;
         } 
-        if (i % 5 == 0) {
+        if (from % 5 == 0) {
             [str appendString:@"Buzz"];
+            printed = true;
+        }
+        if (! printed) {
+            [str appendFormat:@"%d", from];
         }
         NSLog(@"%@", str);
         [str release];
     }
+}
+
+int main() {
+    fizzbuzz(1, 100);
     return 0;
 }
