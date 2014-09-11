@@ -5,16 +5,22 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    for (int i = 0; i <= 100; i++) {
-        cout << i << " ";
-        if (i % 3 == 0) {
+void fizzbuzz(int from, const int &to) {
+    for (; from <= to; from++) {
+        if ((from % 3) + (from % 5) == 0) {
+            cout << "FizzBuzz";
+        } else if (from % 3 == 0) { 
             cout << "Fizz";
-        }
-        if (i % 5 == 0) {
+        } else if (from % 5 == 0) {
             cout << "Buzz";
+        } else {
+            cout << from;
         }
         cout << endl;
     }
+}
+
+int main() {
+    fizzbuzz(1, 100);
     return 0;
 }
