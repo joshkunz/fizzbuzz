@@ -4,17 +4,25 @@
 
 #include <stdio.h>
 
-int main() {
-    int i = 0;
-    for (; i < 100; i++) {
-        printf("%d ", i);
-        if (i % 3 == 0) {
+void fizzbuzz(int from, int to) {
+    for (; from <= to; from++) {
+        int printed = 0;
+        if (from % 3 == 0) {
             printf("Fizz");
+            printed = 1;
         } 
-        if (i % 5 == 0) {
+        if (from % 5 == 0) {
             printf("Buzz");
+            printed = 1;
+        }
+        if (! printed) {
+            printf("%d ", from);
         }
         printf("\n");
     }
+}
+
+int main() {
+    fizzbuzz(1, 100);
     return 0;
 }
