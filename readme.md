@@ -32,34 +32,35 @@ Each file should have a note, explaining what language it's written in,
 how to run it on a \*nix system, and possibly a link to an online REPL.
 
 Languages Implemented:
-* AWK
-* BASH Shell
-* bc (Bench Calculator)
+* AWK (.awk)
+* BASH Shell (.sh)
+* bc (Bench Calculator) (.bc)
 * C Variants 
-  * C
-  * C++
-  * Objective-C
-* FORTH
-* GDB's scripting language
-* Go
-* Haskell
-* Java
+  * C (.c)
+  * C++ (.cc)
+  * Objective-C (.m)
+* Fish Shell (.fish)
+* FORTH (.forth)
+* GDB's scripting language (.gdb)
+* Go (.go)
+* Haskell (.hs)
+* Java (.java)
 * JavaScript Variants
-  * JavaScript
-  * CoffeeScript
-* Lisp Variants
-  * R5RS Scheme
-  * newLISP (scheme variant)
-  * Racket (scheme variant)
-* Lua
-* M4
-* OCaml
-* Prolog
-* Python
-* R
-* Ruby
-* Plain TeX
-* VimScript
+  * JavaScript (.js)
+  * CoffeeScript (.coffee)
+* Scheme Variants
+  * R5RS Scheme (.scm)
+  * newLISP (.lsp)
+  * Racket (.rkt)
+* Lua (.lua)
+* M4 (.m4)
+* OCaml (.ml)
+* Prolog (.pl)
+* Python (.py)
+* R (.r)
+* Ruby (.rb)
+* Plain TeX (.tex)
+* VimScript (.vim)
 
 Languages on the 'to learn' list:
 * x86 Assembly
