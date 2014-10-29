@@ -43,6 +43,7 @@ Languages Implemented:
 * FORTH (.forth)
 * GDB's scripting language (.gdb)
 * Go (.go)
+* GVPR (.gvpr)
 * Haskell (.hs)
 * Java (.java)
 * JavaScript Variants

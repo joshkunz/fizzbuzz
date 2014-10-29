@@ -1,0 +1,22 @@
+// Language: gvpr 
+// To Run: gvpr -f fizzbuzz.gvpr
+
+BEGIN {
+    void fizzbuzz(int from, int to) {
+        int i = 0;
+        for (i = from; i <= to; i++) {
+            string f = "", b = "";
+            int m3 = i % 3 == 0, 
+                m5 = i % 5 == 0;
+            if (m3) { f = "Fizz"; }
+            if (m5) { b = "Buzz"; }
+            if (! (m3 || m5)) {
+                print(i);
+            } else {
+                print(f, b);
+            }
+        }
+    }
+
+    fizzbuzz(1, 100);
+}
