@@ -1,21 +1,18 @@
 FizzBuzz is a simple programming game with the following rules:
 
-Print the numbers 1 through 100. If a number is divisible by 3 
-print 'Fizz' after the number. If a number is divisible by 5 print 'Buzz'
-after the number. And last, if a number is divisible by 3 and 5 print 'FizzBuzz'
-after the number.
+For every number `i` in the range [1..100], if `i` is divisible by 3, print 'Fizz', if `i` is divisible by 5, print 'Buzz', if `i` is divisible by both 3 and 5, print 'FizzBuzz'. Otherwise, print `i`.
 
 The output from a FizzBuzz program should look something like this:
 
 <pre>
 1
 2
-3 Fizz
+Fizz
 4
-5 Buzz
-6 Fizz
+Buzz
+Fizz
 ...
-15 FizzBuzz
+FizzBuzz
 16
 </pre>
 
