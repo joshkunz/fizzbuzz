@@ -1,6 +1,6 @@
 ( Language: Forth [https://en.wikipedia.org/wiki/FORTH]
   To Run:
-  $ forth fizzbuzz.forth )
+  $ gforth fizzbuzz.forth )
 : ?DIV OVER SWAP MOD 0= ; ( n0 n1 -- n0 div )
 : FB 
     1 + swap ( Go from 1..max + 1)

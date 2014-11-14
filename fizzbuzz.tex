@@ -23,6 +23,7 @@ the pdf of this document, below is the output of fizzbuzz from 1 to 100:
 \newcount\modq
 \newif\ifdthree
 \newif\ifdfive
+\newif\ifpdefault
 
 % \mod{a}{n} will set the counter 'a' to the remainder
 % of a / n
@@ -37,17 +38,18 @@ the pdf of this document, below is the output of fizzbuzz from 1 to 100:
 % \fb{\ctr} will output the fizzbuzz string for the 
 % number in the counter
 \def\fb #1{
-    \number#1 
     \dthreefalse
     \dfivefalse
+    \pdefaulttrue
     \divis=#1
     \mod{\divis}{3}
-    \ifnum \divis=0 \dthreetrue\fi
+    \ifnum \divis=0 \dthreetrue \pdefaultfalse \fi
     \divis=#1
     \mod{\divis}{5}
-    \ifnum \divis=0 \dfivetrue\fi
+    \ifnum \divis=0 \dfivetrue \pdefaultfalse \fi
     \ifdthree{}Fizz\fi
     \ifdfive{}Buzz\fi
+    \ifpdefault{}\number#1\fi
     \par
 }
 
