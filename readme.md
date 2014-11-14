@@ -62,8 +62,8 @@ Languages Implemented:
 * Ruby (.rb)
 * Plain TeX (.tex)
 * VimScript (.vim)
+* x86\_64 Assembly (using OSX syscalls)
 
 Languages on the 'to learn' list:
-* x86 Assembly
 * Erlang
 * tcl
