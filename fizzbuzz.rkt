@@ -6,7 +6,10 @@
               (zero? (modulo x y)))]
         [fizz (if (div? from 3) "Fizz" "")]
         [buzz (if (div? from 5) "Buzz" "")])
-  (printf "~a ~a~a~n" from fizz buzz)
+  (if (not (string=? (string-append fizz buzz) ""))
+   (printf "~a~a" fizz buzz)
+   (display from))
+  (newline)
   (if (< from to)
    (fizzbuzz (+ from 1) to)
    (void)
