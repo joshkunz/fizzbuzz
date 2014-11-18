@@ -3,5 +3,9 @@
 (1..100).each do |x|
     fizz = x % 3 == 0 ? "Fizz" : ""
     buzz = x % 5 == 0 ? "Buzz" : ""
-    puts "#{x} #{fizz + buzz}"
+    if not (fizz.empty? and buzz.empty?) then
+        puts "#{fizz + buzz}"
+    else
+        puts "#{x}"
+    end
 end

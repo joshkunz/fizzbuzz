@@ -3,15 +3,16 @@
 # $ python fizzbuzz.py
 
 # Ultra Simple Fizz Buzz
-for n in range(101):
+for n in range(1, 101):
     if n % 3 == 0 and n % 5 == 0:
-        print n, "FizzBuzz"
+        print "FizzBuzz"
     elif n % 3 == 0:
-        print n, "Fizz"
+        print "Fizz"
     elif n % 5 == 0:
-        print n, "Buzz"
+        print "Buzz"
     else:
         print n
 
+print "--- One-Liner ---"
 # Condensed One-Liner
-print'\n'.join('%d %s%s'%(x,'Fizz'if x%3==0 else'','Buzz'if x%5==0 else'')for x in range(101))
+print"\n".join(["","Fizz"][f]+["","Buzz"][b]if f+b else str(x)for(x,f,b)in[(x,x%3==0,x%5==0)for x in range(1,101)])
