@@ -13,12 +13,20 @@ define fizzbuzz
     end
 
     while $from <= $to
-        printf "%d ", $from
-        if $from % 3 == 0
-            echo Fizz
-        end 
-        if $from % 5 == 0
-            echo Buzz
+        set $fizz = ($from % 3) == 0
+        set $buzz = ($from % 5) == 0
+        if $fizz && $buzz 
+            echo FizzBuzz
+        else 
+            if $fizz 
+                echo Fizz 
+            end
+            if $buzz 
+                echo Buzz 
+            end
+        end
+        if ! ($fizz || $buzz) 
+            printf "%d", $from 
         end
         echo \n
         set $from = $from + 1
