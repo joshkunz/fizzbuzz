@@ -5,8 +5,9 @@ f <- function(n) { if (n %% 3 == 0) { "Fizz" } else { "" } }
 b <- function(n) { if (n %% 5 == 0) { "Buzz" } else { "" } }
 fizzbuzz <- function(from, to) {
     for (i in seq(from, to)) {
-        rs = sprintf("%d %s%s", i, f(i), b(i))
-        invisible(write(rs, stdout()))
+        r = sprintf("%s%s", f(i), b(i))
+        if (r == "") { r = sprintf("%d", i) }
+        invisible(write(r, stdout()))
     }
 }
 
