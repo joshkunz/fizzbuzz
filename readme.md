@@ -57,10 +57,10 @@ Languages Implemented:
 * Python (.py)
 * R (.r)
 * Ruby (.rb)
+* Tcl (.tcl)
 * Plain TeX (.tex)
 * VimScript (.vim)
 * x86\_64 Assembly (using OSX syscalls)
 
 Languages on the 'to learn' list:
 * Erlang
-* tcl
