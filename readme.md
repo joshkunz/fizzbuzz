@@ -57,6 +57,7 @@ Languages Implemented:
 * Python (.py)
 * R (.r)
 * Ruby (.rb)
+* Rust (.rs)
 * Tcl (.tcl)
 * Plain TeX (.tex)
 * VimScript (.vim)
