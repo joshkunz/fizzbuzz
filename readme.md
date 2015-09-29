@@ -36,6 +36,7 @@ Languages Implemented:
   * C (.c)
   * C++ (.cc)
   * Objective-C (.m)
+* E (.e)
 * Fish Shell (.fish)
 * FORTH (.forth)
 * GDB's scripting language (.gdb)
